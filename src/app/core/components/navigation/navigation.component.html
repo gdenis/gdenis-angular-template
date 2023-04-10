@@ -1,0 +1,16 @@
+<div class="navigation">
+  <ul>
+    <li><app-breadcrumb></app-breadcrumb></li>
+    <li>
+      <button (click)="navigation.goBack()">{{ "BACK" | translate }}</button>
+    </li>
+
+    <li>
+      <p-dropdown
+        [options]="suportedLangsArray"
+        (onChange)="langChange($event)"
+        placeholder="{{ CurrentLang }}"
+      ></p-dropdown>
+    </li>
+  </ul>
+</div>
