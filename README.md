@@ -34,6 +34,7 @@ Run `npm run prettier` and `npm run lint` to both format and Lint the project. U
 
 ## Extended Documentation in Notion
 
+[Notion](https://gdenis.notion.site/gdenis/Gabriel-Denis-Angular-15-Template-b61aacc39ade49c78cb1e4729e2eadb8)
 
 ## Using Footer library
 
