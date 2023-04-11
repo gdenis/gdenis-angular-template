@@ -8,3 +8,11 @@
   </ng-template>
 </p-menubar>
 <app-breadcrumb></app-breadcrumb>
+
+<p-button
+  label="{{ 'BACK' | translate }}"
+  icon="pi pi-arrow-circle-left"
+  iconPos="left"
+  styleClass="p-button-rounded p-button-outlined p-button-raised"
+  (onClick)="navigation.goBack()"
+></p-button>

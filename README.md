@@ -22,10 +22,21 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+## Running ESLint and prettier
+
+Run `npm run prettier` and `npm run lint` to both format and Lint the project. Use the `:fix` suffix to fix the problems that can be fixed automatically.
+
+
+## Extended Documentation in Notion
+
+
 ## Using Footer library
 
 [Footer](https://www.npmjs.com/package/gdenis-footer)
+
+

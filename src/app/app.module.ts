@@ -10,6 +10,7 @@ import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { LandingPageComponent } from "./landing-page/landing-page.component";
 import { GdenisFooterModule } from "gdenis-footer";
+import { NavigationService } from "./core/services/navigation-service/navigation.service";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -35,4 +36,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor(public navigation: NavigationService) {
+    this.navigation.startSaveHistory();
+  }
+}

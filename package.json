@@ -23,7 +23,7 @@
     "prettier": "prettier \"**/*.ts\" \"**/*.html\" --write --ignore-path .gitignore",
     "prettier:fix": "npm run prettier --write",
     "lint": "eslint \"**/*.ts\" \"**/*.html\" --ignore-path .gitignore",
-    "lint.fix": "eslint \"**/*.ts\" \"**/*.html\" --fix --ignore-path .gitignore"
+    "lint:fix": "eslint \"**/*.ts\" \"**/*.html\" --fix --ignore-path .gitignore"
   },
   "private": true,
   "dependencies": {

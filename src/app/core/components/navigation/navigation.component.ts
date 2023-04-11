@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { TranslateService } from "@ngx-translate/core";
 import { MenuItem } from "primeng/api";
 import { SuportedLangs } from "../../enums/suported-langs.enum";
+import { NavigationService } from "../../services/navigation-service/navigation.service";
 
 @Component({
   selector: "app-navigation",
@@ -14,7 +15,10 @@ export class NavigationComponent implements OnInit {
   CurrentLang!: string;
   items: MenuItem[] = [];
 
-  constructor(public translate: TranslateService) {
+  constructor(
+    public translate: TranslateService,
+    public navigation: NavigationService
+  ) {
     this.suportedLangsArray = Object.values(this.SuportedLangs);
     console.log(this.suportedLangsArray);
     this.translate.addLangs(this.suportedLangsArray);

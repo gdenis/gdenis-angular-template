@@ -1,16 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./styles/primeng.scss";
 
-/* Prime Icons */
-@import "primeicons/primeicons.css";
+/*Bootstrap*/
 
-@import "/node_modules/primeflex/primeflex.css";
-
-/* Bootsrap */
-@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-
-/* Import all of botstrap scss stuff */
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "./styles/bootrstap.scss";
 
 html,
 body {

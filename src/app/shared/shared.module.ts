@@ -7,12 +7,14 @@ import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
 import { HttpLoaderFactory } from "../app.module";
 import { HttpClient } from "@angular/common/http";
 import { MenubarModule } from "primeng/menubar";
+import { ButtonModule } from "primeng/button";
 
 const PRIMENG_MODULES = [
   BreadcrumbModule,
   DropdownModule,
   ToastModule,
   MenubarModule,
+  ButtonModule,
 ];
 
 @NgModule({
