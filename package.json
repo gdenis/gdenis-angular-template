@@ -4,6 +4,11 @@
     "email": "gabydll95@gmail.com",
     "name": "Gabriel Denis Llanes"
   },
+  "repository": {
+    "url": "https://github.com/gdenis/gdenis-angular-template.git",
+    "type": "Angular project template"
+  },
+  "license": "MIT",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -32,7 +37,11 @@
     "@angular/router": "^15.2.0",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3",
     "eslint-config-prettier": "^8.8.0",
+    "gdenis-footer": "^0.0.1",
+    "primeflex": "^3.3.0",
     "primeicons": "^6.0.1",
     "primeng": "^15.3.0",
     "rxjs": "~7.8.0",

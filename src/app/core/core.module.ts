@@ -18,8 +18,6 @@ export class CoreModule {
   constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
     console.log("parentModule", parentModule);
     this.throwIfAlreadyLoaded(parentModule, `CoreModule`);
-    //@Optional : a constructor paramater decorator that makes a dependency as optional
-    //@SkipSelf : go to the parent injector and see if we can import a core module
   }
 
   throwIfAlreadyLoaded(parentModule: CoreModule, moduleName: string) {

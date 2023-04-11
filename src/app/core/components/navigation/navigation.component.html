@@ -1,16 +1,10 @@
-<div class="navigation">
-  <ul>
-    <li><app-breadcrumb></app-breadcrumb></li>
-    <li>
-      <button (click)="navigation.goBack()">{{ "BACK" | translate }}</button>
-    </li>
-
-    <li>
-      <p-dropdown
-        [options]="suportedLangsArray"
-        (onChange)="langChange($event)"
-        placeholder="{{ CurrentLang }}"
-      ></p-dropdown>
-    </li>
-  </ul>
-</div>
+<p-menubar [model]="items" styleClass="p-menubar">
+  <ng-template pTemplate="end">
+    <p-dropdown
+      [options]="suportedLangsArray"
+      (onChange)="langChange($event)"
+      placeholder="{{ CurrentLang }}"
+    ></p-dropdown>
+  </ng-template>
+</p-menubar>
+<app-breadcrumb></app-breadcrumb>

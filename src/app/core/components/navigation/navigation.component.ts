@@ -1,26 +1,34 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { TranslateService } from "@ngx-translate/core";
+import { MenuItem } from "primeng/api";
 import { SuportedLangs } from "../../enums/suported-langs.enum";
-import { NavigationService } from "../../services/navigation-service/navigation.service";
 
 @Component({
   selector: "app-navigation",
   templateUrl: "./navigation.component.html",
   styleUrls: ["./navigation.component.scss"],
 })
-export class NavigationComponent {
+export class NavigationComponent implements OnInit {
   SuportedLangs = SuportedLangs;
   suportedLangsArray!: string[];
   CurrentLang!: string;
+  items: MenuItem[] = [];
 
-  constructor(
-    public navigation: NavigationService,
-    public translate: TranslateService
-  ) {
+  constructor(public translate: TranslateService) {
     this.suportedLangsArray = Object.values(this.SuportedLangs);
     console.log(this.suportedLangsArray);
     this.translate.addLangs(this.suportedLangsArray);
     this.loadLangLocal();
+  }
+
+  ngOnInit(): void {
+    this.items = [
+      {
+        label: "First Page",
+        icon: "pi pi-fw pi-prime",
+        routerLink: "./page1/1",
+      },
+    ];
   }
 
   private loadLangLocal(): void {
@@ -30,7 +38,9 @@ export class NavigationComponent {
       );
       this.CurrentLang = localStorage.getItem("lang") ?? "";
     } else {
-      const navLanguage: string = navigator.language.split("-")[0];
+      const navLanguage: string = navigator.language
+        .split("-")[0]
+        .toLowerCase();
 
       if (this.suportedLangsArray.includes(navLanguage)) {
         localStorage.setItem("lang", navLanguage);

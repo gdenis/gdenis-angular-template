@@ -1,13 +1,22 @@
-.navigation{
-  ul {
-      list-style: none;
-      margin: 0;
-      display: flex;
-      padding: 0;
+:host ::ng-deep {
+  .p-menubar {
+    background-color: var(--surface-500);
 
-      li {
-          margin-left: 10px;
+    .p-menubar-root-list {
+      .p-menuitem {
+        .p-menuitem-link {
+          background-color: var(--yellow-300);
+
+          .p-menuitem-text {
+            color: var(--bluegray-400);
+          }
         }
-    }
 
+        .p-menuitem-link:hover {
+          background-color: var(--yellow-300);
+          color: var(--bluegray-400);
+        }
+      }
+    }
+  }
 }
