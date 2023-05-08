@@ -40,7 +40,6 @@
     "@popperjs/core": "^2.11.7",
     "bootstrap": "^5.2.3",
     "eslint-config-prettier": "^8.8.0",
-    "gdenis-footer": "^0.0.1",
     "primeflex": "^3.3.0",
     "primeicons": "^6.0.1",
     "primeng": "^15.3.0",

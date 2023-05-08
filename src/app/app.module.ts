@@ -9,8 +9,8 @@ import { CoreModule } from "./core/core.module";
 import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { LandingPageComponent } from "./landing-page/landing-page.component";
-import { GdenisFooterModule } from "gdenis-footer";
 import { NavigationService } from "./core/services/navigation-service/navigation.service";
+import { GdenisFooterModule } from "gdenis-footer";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
